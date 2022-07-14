@@ -7,22 +7,22 @@
 <img src="https://img.shields.io/github/stars/hamiranisahil/material_scrollbar?style=social" alt="material_scrollbar Git Stars">
 </a>
 <a href="https://developer.android.com" style="pointer-events: stroke;" target="_blank">
-<img src="https://img.shields.io/badge/platform-android-blue">
+<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white">
 </a>
 <a href="https://developer.apple.com/ios/" style="pointer-events: stroke;" target="_blank">
-<img src="https://img.shields.io/badge/platform-iOS-blue">
+<img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white">
 </a>
 <a href="" style="pointer-events: stroke;" target="_blank">
-<img src="https://img.shields.io/badge/platform-Linux-blue">
+<img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white">
 </a>
 <a href="" style="pointer-events: stroke;" target="_blank">
-<img src="https://img.shields.io/badge/platform-Mac-blue">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
 </a>
 <a href="" style="pointer-events: stroke;" target="_blank">
-<img src="https://img.shields.io/badge/platform-web-blue">
+<img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white">
 </a>
 <a href="" style="pointer-events: stroke;" target="_blank">
-<img src="https://img.shields.io/badge/platform-Windows-blue">
+<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
 </a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="MIT License"></a>
 
@@ -64,33 +64,31 @@ This package provides customizable scrollbar for your widget and easy to impleme
 
 ### Required parameters
 
-##### gridDelegate:
-A delegate that controls the layout of the children within the GridView.
+##### thumbColor:
+thumbColor is the moving part of the scrollbar, which usually floats on top of the track.
 
-##### children:
-This property contains list of [DraggableGridItem] and it is use to show the widget inside the GridView.builder to provide the drag & drop functionality. Also, it contains isDraggable parameter which manages enable/disable the drag & drop functionality.
-
-##### dragCompletion:
-This property contains DragCompletion implementation. You have to override and store updated list (if needed).
+##### trackColor:
+trackColor is the empty space “below” the progress bar.
 
 
 ### Optional parameters
 
-##### isOnlyLongPress:
-This property contains ```bool``` value. If this property is ```false``` then it works with simple press draggable or else it works with long press. default value is 'true'.
+##### thickness:
+The thickness of the scrollbar in the cross axis of the scrollable.
 
-##### dragFeedback:
-This property contains DragFeedback implementation. If this property overrides then you have to return a Widget and we will use this widget in feedback. Learn more about feedback from [Draggable](https://api.flutter.dev/flutter/widgets/Draggable-class.html#:~:text=Draggable%20class%20Null%20safety,user's%20finger%20across%20the%20screen) class.
+##### thumbVisibility:
+Indicates that the scrollbar thumb should be visible, even when a scroll is not underway.
 
-##### dragPlaceHolder:
-This property contains DragPlaceHolder implementation. If this property overrides then you have to return a PlaceHolderWidget and we will use this widget in place holder.
+##### radius:
+The Radius of the scrollbar thumb's rounded rectangle corners.
 
-##### dragChildWhenDragging:
-This property contains DragChildWhenDragging implementation. If this property overrides then you have to return a Widget and we will display this widget instead of child when drags are under way. Learn more about childWhenDragging from [Draggable](https://api.flutter.dev/flutter/widgets/Draggable-class.html#:~:text=Draggable%20class%20Null%20safety,user's%20finger%20across%20the%20screen) class.
+##### thumbSize:
+The size of the scrollbar thumb.
 
 
 ## Guideline for contributors
 Contribution towards our repository is always welcome, we request contributors to create a pull request to the develop branch only.
+
 
 ## Guideline to report an issue/feature request
 It would be great for us if the reporter can share the below things to understand the root cause of the issue.
@@ -100,8 +98,10 @@ It would be great for us if the reporter can share the below things to understan
 - Device specification like (Manufacturer, OS version, etc)
 - Screenshot/video with steps to reproduce the issue
 
+
 # LICENSE!
 Material Scrollbar is [MIT-licensed](https://github.com/hamiranisahil/material_scrollbar/blob/main/LICENSE "MIT-licensed").
+
 
 # Let us know!
 We’d be really happy if you send us links to your projects where you use our component. Just send an email to hamirani.sahil@gmail.com And do let us know if you have any questions or suggestion regarding our work.
