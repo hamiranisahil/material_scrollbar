@@ -1,16 +1,16 @@
 # material_scrollbar
 
 <a href="https://pub.dev/packages/material_scrollbar">
-<img src="https://img.shields.io/pub/v/material_scrollbar?label=material_scrollbar" alt="material_scrollbar version">
+<img src="https://img.shields.io/pub/v/material_scrollbar?label=material_scrollbar&style=for-the-badge" alt="material_scrollbar version">
 </a>
 <a href="https://github.com/hamiranisahil/material_scrollbar/stargazers">
-<img src="https://img.shields.io/github/stars/hamiranisahil/material_scrollbar?style=social" alt="material_scrollbar Git Stars">
-</a>
-<a href="https://developer.android.com" style="pointer-events: stroke;" target="_blank">
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white">
+<img src="https://img.shields.io/github/stars/hamiranisahil/material_scrollbar?style=for-the-badge" alt="material_scrollbar Git Stars">
 </a>
 <a href="https://developer.apple.com/ios/" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white">
+</a>
+<a href="https://developer.android.com" style="pointer-events: stroke;" target="_blank">
+<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white">
 </a>
 <a href="" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white">
@@ -24,7 +24,7 @@
 <a href="" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
 </a>
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="MIT License"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg?style=for-the-badge" alt="MIT License"></a>
 
 This package provides customizable scrollbar for your widget and easy to implement with the few lines of code.
 
