@@ -1,5 +1,7 @@
 # material_scrollbar
 
+This package provides customizable scrollbar for your widget and easy to implement with the few lines of code.
+
 <a href="https://pub.dev/packages/material_scrollbar">
 <img src="https://img.shields.io/pub/v/material_scrollbar?label=material_scrollbar&style=for-the-badge" alt="material_scrollbar version">
 </a>
@@ -25,8 +27,6 @@
 <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
 </a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg?style=for-the-badge" alt="MIT License"></a>
-
-This package provides customizable scrollbar for your widget and easy to implement with the few lines of code.
 
 
 ### Material Scrollbar.
