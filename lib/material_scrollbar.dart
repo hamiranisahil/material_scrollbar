@@ -42,8 +42,8 @@ class MaterialScrollBar extends Scrollbar {
       radius: radius,
       trackVisibility: true,
       trackerColor: trackColor,
-      child: child,
       userThumbSize: thumbSize,
+      child: child,
     );
   }
 }
@@ -104,13 +104,12 @@ class _MaterialWhiteScrollbarState extends MaterialRawScrollbarState<MaterialWhi
   bool get showScrollbar =>
       widget.thumbVisibility ??
       _scrollbarTheme.thumbVisibility?.resolve(_states) ??
-      _scrollbarTheme.isAlwaysShown ??
       false;
 
   @override
   bool get enableGestures => widget.interactive ?? _scrollbarTheme.interactive ?? !_useAndroidScrollbar;
 
-  bool get _showTrackOnHover => widget.showTrackOnHover ?? _scrollbarTheme.showTrackOnHover ?? false;
+  bool get _showTrackOnHover => widget.showTrackOnHover ?? _scrollbarTheme.trackVisibility?.resolve(_states) ?? false;
 
   MaterialStateProperty<bool> get _trackVisibility => MaterialStateProperty.resolveWith((Set<MaterialState> states) {
         if (states.contains(MaterialState.hovered) && _showTrackOnHover) {
@@ -142,8 +141,9 @@ class _MaterialWhiteScrollbarState extends MaterialRawScrollbarState<MaterialWhi
 
   MaterialStateProperty<double> get _thickness {
     return MaterialStateProperty.resolveWith((Set<MaterialState> states) {
-      if (states.contains(MaterialState.hovered) && _trackVisibility.resolve(states))
+      if (states.contains(MaterialState.hovered) && _trackVisibility.resolve(states)) {
         return widget.hoverThickness ?? _scrollbarTheme.thickness?.resolve(states) ?? _kScrollbarThicknessWithTrack;
+      }
       // The default scrollbar thickness is smaller on mobile.
       return widget.thickness ??
           _scrollbarTheme.thickness?.resolve(states) ??
